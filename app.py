@@ -29,7 +29,7 @@ if christmas is not todays_date:
 """ Create timedelta"""
 custom_timedelta = timedelta(days=4, hours=10)
 
-""" Timedeltas only can do 1 max in seconds so will only show hours e.g. 36000"""
+""" Timedeltas only can do 1 max in seconds so will only show hours e.g. 36000 basically it expects you to do calculations yourself"""
 sec = custom_timedelta.seconds
 
 """ Converts seconds to hours"""
@@ -39,4 +39,3 @@ print(sec / 60 / 60)
 today = datetime.today()
 eta = timedelta(hours=4)
 arrival = today + eta
-print(arrival)
