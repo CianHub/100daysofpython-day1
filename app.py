@@ -12,8 +12,10 @@ todays_month = todays_date.month
 todays_day = todays_date.day
 todays_year = todays_date.year
 
-
 """ Create new instance of date"""
 christmas = date(2020, 12, 25)
 
-print(christmas)
+""" Can get the difference between two dates returned as a timedelta instance"""
+diff = christmas - todays_date
+
+print(diff)
