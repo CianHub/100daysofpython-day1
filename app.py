@@ -18,4 +18,9 @@ christmas = date(2020, 12, 25)
 """ Can get the difference between two dates returned as a timedelta instance"""
 diff = christmas - todays_date
 
-print(diff)
+""" Can drill into timedelta"""
+number_of_days_diff = diff.days
+
+""" use case"""
+if christmas is not todays_date:
+    print('Christmas is ' + str(number_of_days_diff) + ' days away')
