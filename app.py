@@ -38,4 +38,5 @@ print(sec / 60 / 60)
 """ Can add now and a timedelta to get the datetime for when that is"""
 today = datetime.today()
 eta = timedelta(hours=4)
-print(today + eta)
+arrival = today + eta
+print(arrival)
